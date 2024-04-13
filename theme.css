@@ -57,6 +57,8 @@
 	--titlebar-background-focused: var(--background-secondary);
 	--divider-color-hover: var(--hot-red);
 	--code-background: var(--gray-900);
+	--background-modifier-error: var(--orange-red);
+	--text-error: var(--orange-red);
 }
 
 .vertical-tab-nav-item {
@@ -76,7 +78,7 @@
 
 .mod-cta {
 	background: linear-gradient(var(--background-secondary), var(--background-secondary)) padding-box,
-	linear-gradient(90deg, var(--orange-red) 0%, var(--vivid-pink) 50%, var(--electric-violet) 100%) border-box;
+		linear-gradient(90deg, var(--orange-red) 0%, var(--vivid-pink) 50%, var(--electric-violet) 100%) border-box;
 	border-radius: 0.25rem;
 	border: 1px solid transparent;
 }
@@ -108,7 +110,7 @@
 	background-color: var(--black);
 }
 
-.mod-warning {
+.mod-warning:not(button) {
 	--alert-gradient: color-mix(in srgb, var(--selection-color) 90%, transparent);
 	--alert-accent: var(--hot-red);
 	border-width: 0;
@@ -123,6 +125,7 @@
 	margin-block: 1rem;
 	position: relative;
 }
+
 
 .dropdown {
 	border: 1px solid var(--gray-500);
